@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+</head>
+<body>
+    <p>Calculator Sum Two Number</p>
+    <input type="number" id="Num1" placeholder="First Number"> + 
+    <input type="number" id="Num2" placeholder="Second Number" >
+    <button onclick="Cal()" >Show result</button>
+    <p id="Result"></p>
+    <script>
+        function Cal(){
+            let Number1 = document.getElementById('Num1').value;
+            let Number2 = document.getElementById('Num2').value;
+            let a = Number(Number1);
+            let b = Number(Number2);
+            let c = a + b;
+            document.getElementById('Result').innerHTML = 'Result' + ' is : ' + c ;
+            console.log(typeof(c));
+        }
+    </script>
+
+</body>
+</html>
